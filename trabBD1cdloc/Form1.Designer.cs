@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCadastro = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCadastro
+            // 
+            this.btnCadastro.Location = new System.Drawing.Point(12, 173);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(228, 23);
+            this.btnCadastro.TabIndex = 0;
+            this.btnCadastro.Text = "Cadastro de Conta";
+            this.btnCadastro.UseVisualStyleBackColor = true;
+            this.btnCadastro.Click += new System.EventHandler(this.BtnCadastro_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(252, 508);
+            this.Controls.Add(this.btnCadastro);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCadastro;
     }
 }
 

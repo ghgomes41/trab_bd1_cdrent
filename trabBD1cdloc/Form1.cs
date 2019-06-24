@@ -16,5 +16,17 @@ namespace trabBD1cdloc
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ConectaDB db = new ConectaDB();
+           
+         }
+
+        private void BtnCadastro_Click(object sender, EventArgs e)
+        {
+            FormCadastro cadastro = new FormCadastro();
+            cadastro.Show();
+        }
     }
 }
