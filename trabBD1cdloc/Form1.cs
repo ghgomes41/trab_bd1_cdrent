@@ -28,5 +28,12 @@ namespace trabBD1cdloc
             FormCadastro cadastro = new FormCadastro();
             cadastro.Show();
         }
+
+        private void BtnCadArtGen_Click(object sender, EventArgs e)
+        {
+            FormCadArtistaGenero cadArtistaGenero = new FormCadArtistaGenero();
+            cadArtistaGenero.Show();
+
+        }
     }
 }

@@ -73,14 +73,17 @@ namespace trabBD1cdloc
                 txtBairro.Text + "','" + txtCidade.Text + "','" + txtUF.Text + "','" + txtSalario.Text + "','" + cbTurno.Text + "','" +
                 txtFuncao.Text + "','" + txtCTPS.Text + "')";
             
-                db.testeInsert(SaveQuery);
-                /*int rows = int.Parse(db.testeCon("SELECT COUNT FROM Pessoa_Cliente_Funcionario WHERE cpf = '" + txtCPF.Text + "'"));
-                if (rows > 0){
-                MessageBox.Show("Cadastro Realizado com Sucesso");
-                }
-                else
-                    MessageBox.Show("Erro na Inserção");*/
-
+                //db.testeInsert(SaveQuery);
+            String mensagem = db.testeInsert(SaveQuery);
+            if (mensagem != "")
+            {
+                MessageBox.Show("Erro na inserção: " + mensagem);
+            }
+            else
+            {
+                MessageBox.Show("Inserido com sucesso");
+                this.Close();
+            }
 
         }
 

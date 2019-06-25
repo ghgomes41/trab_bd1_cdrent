@@ -41,7 +41,9 @@ namespace trabBD1cdloc
                 Result = Ex.Message;
                 return Result;
             }
-        }public String testeInsert(String SelectQuery)
+        }
+
+        public String testeInsert(String SelectQuery)
         {
             String Result = "";
             try
