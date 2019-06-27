@@ -32,7 +32,6 @@
             this.groupBoxFuncionario = new System.Windows.Forms.GroupBox();
             this.cbTurno = new System.Windows.Forms.ComboBox();
             this.txtFuncao = new System.Windows.Forms.TextBox();
-            this.txtSalario = new System.Windows.Forms.TextBox();
             this.txtCTPS = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -64,10 +63,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtSalario = new System.Windows.Forms.NumericUpDown();
             this.groupBoxFuncionario.SuspendLayout();
             this.gbEndereco.SuspendLayout();
             this.gbPersonal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalario)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -81,9 +81,9 @@
             // 
             // groupBoxFuncionario
             // 
+            this.groupBoxFuncionario.Controls.Add(this.txtSalario);
             this.groupBoxFuncionario.Controls.Add(this.cbTurno);
             this.groupBoxFuncionario.Controls.Add(this.txtFuncao);
-            this.groupBoxFuncionario.Controls.Add(this.txtSalario);
             this.groupBoxFuncionario.Controls.Add(this.txtCTPS);
             this.groupBoxFuncionario.Controls.Add(this.label13);
             this.groupBoxFuncionario.Controls.Add(this.label15);
@@ -113,13 +113,6 @@
             this.txtFuncao.Name = "txtFuncao";
             this.txtFuncao.Size = new System.Drawing.Size(103, 20);
             this.txtFuncao.TabIndex = 24;
-            // 
-            // txtSalario
-            // 
-            this.txtSalario.Location = new System.Drawing.Point(376, 30);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(103, 20);
-            this.txtSalario.TabIndex = 23;
             // 
             // txtCTPS
             // 
@@ -417,22 +410,29 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Nome:";
             // 
-            // button1
+            // txtSalario
             // 
-            this.button1.Location = new System.Drawing.Point(667, 367);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.txtSalario.DecimalPlaces = 2;
+            this.txtSalario.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.txtSalario.Location = new System.Drawing.Point(374, 31);
+            this.txtSalario.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(120, 20);
+            this.txtSalario.TabIndex = 25;
             // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 501);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.gbPersonal);
             this.Controls.Add(this.gbEndereco);
             this.Controls.Add(this.btnReset);
@@ -450,6 +450,7 @@
             this.gbEndereco.PerformLayout();
             this.gbPersonal.ResumeLayout(false);
             this.gbPersonal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,7 +465,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbTurno;
         private System.Windows.Forms.TextBox txtFuncao;
-        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.TextBox txtCTPS;
         private System.Windows.Forms.RadioButton rbFuncY;
         private System.Windows.Forms.RadioButton rbFuncN;
@@ -492,6 +492,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown txtSalario;
     }
 }

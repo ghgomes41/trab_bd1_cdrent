@@ -35,5 +35,24 @@ namespace trabBD1cdloc
             cadArtistaGenero.Show();
 
         }
+
+        private void BtnCadastroCD_Click(object sender, EventArgs e)
+        {
+            FormCadastroCD cadastroCD = new FormCadastroCD();
+            cadastroCD.Show();
+        }
+
+        private void BtnAltExcConta_Click(object sender, EventArgs e)
+        {
+            UpdateConta conta = new UpdateConta();
+            conta.Show();
+
+        }
+
+        private void BtnAlugar_Click(object sender, EventArgs e)
+        {
+            AlugaCD aluga = new AlugaCD();
+            aluga.Show();
+        }
     }
 }

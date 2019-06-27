@@ -69,9 +69,9 @@ namespace trabBD1cdloc
         {
             ConectaDB db = new ConectaDB();
             String SaveQuery = "INSERT INTO Pessoa_Cliente_Funcionario values ('" + txtCPF.Text + "','" + txtDNasc.Text + "','" +
-                txtNome.Text + "','" + cbSexo.Text + "','" + txtCEP.Text + "','" + txtRua.Text + "','" + txtNum.Text + "','" +
-                txtBairro.Text + "','" + txtCidade.Text + "','" + txtUF.Text + "','" + txtSalario.Text + "','" + cbTurno.Text + "','" +
-                txtFuncao.Text + "','" + txtCTPS.Text + "')";
+                txtNome.Text.ToUpper() + "','" + cbSexo.Text.ToUpper() + "','" + txtCEP.Text + "','" + txtRua.Text.ToUpper() + "','" + txtNum.Text.ToUpper() + "','" +
+                txtBairro.Text.ToUpper() + "','" + txtCidade.Text.ToUpper() + "','" + txtUF.Text.ToUpper() + "','" + txtSalario.Value.ToString() + "','" + cbTurno.Text.ToUpper() + "','" +
+                txtFuncao.Text.ToUpper() + "','" + txtCTPS.Text + "')";
             
                 //db.testeInsert(SaveQuery);
             String mensagem = db.testeInsert(SaveQuery);
@@ -108,6 +108,11 @@ namespace trabBD1cdloc
         private void Button1_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void TxtCPF_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

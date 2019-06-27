@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlugaCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlugaCD.Designer.cs">
+      <DependentUpon>AlugaCD.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConectaDB.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,8 +71,23 @@
     <Compile Include="FormCadastro.Designer.cs">
       <DependentUpon>FormCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCadastroCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroCD.Designer.cs">
+      <DependentUpon>FormCadastroCD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateConta.Designer.cs">
+      <DependentUpon>UpdateConta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlugaCD.resx">
+      <DependentUpon>AlugaCD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastro.resx">
       <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroCD.resx">
+      <DependentUpon>FormCadastroCD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +109,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UpdateConta.resx">
+      <DependentUpon>UpdateConta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

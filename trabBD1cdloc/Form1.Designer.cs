@@ -56,6 +56,7 @@
             this.btnAltExcConta.TabIndex = 1;
             this.btnAltExcConta.Text = "Alteração/Exclusão de Conta";
             this.btnAltExcConta.UseVisualStyleBackColor = true;
+            this.btnAltExcConta.Click += new System.EventHandler(this.BtnAltExcConta_Click);
             // 
             // btnCadastroCD
             // 
@@ -65,6 +66,7 @@
             this.btnCadastroCD.TabIndex = 2;
             this.btnCadastroCD.Text = "Cadastrar CD";
             this.btnCadastroCD.UseVisualStyleBackColor = true;
+            this.btnCadastroCD.Click += new System.EventHandler(this.BtnCadastroCD_Click);
             // 
             // btnCadArtGen
             // 
@@ -84,6 +86,7 @@
             this.btnAlugar.TabIndex = 4;
             this.btnAlugar.Text = "Alugar CD";
             this.btnAlugar.UseVisualStyleBackColor = true;
+            this.btnAlugar.Click += new System.EventHandler(this.BtnAlugar_Click);
             // 
             // pictureBox1
             // 
@@ -106,6 +109,7 @@
             this.Controls.Add(this.btnCadastroCD);
             this.Controls.Add(this.btnAltExcConta);
             this.Controls.Add(this.btnCadastro);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Vinyl Record Store";
             this.Load += new System.EventHandler(this.Form1_Load);
